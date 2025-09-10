@@ -58,4 +58,13 @@ public class Femme extends Humain {
     protected void setEsperanceVie() {
         this.esperanceVie = 55 + loto.nextInt(41);
     }
+
+    boolean isHomme(){
+        return false;
+    }
+
+    boolean isFemme(){
+        return true;
+    }
+
 }

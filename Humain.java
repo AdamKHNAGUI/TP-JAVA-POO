@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Humain {
+public abstract class Humain {
 
     protected static Random loto = new Random(Calendar.getInstance().getTimeInMillis());
     protected int age;
@@ -66,6 +66,10 @@ public class Humain {
     }
 
     public void print() {
-        System.out.println("Je m'appelle " + this.nom + ", j'ai "+this.age +" et je pèse "+ this.poids);
+        System.out.println("Je m'appelle " + this.nom + ", j'ai "+this.age +" ans et je pèse "+ this.poids +"kg");
     }
+
+
+    abstract boolean isHomme();
+    abstract boolean isFemme();
 }
